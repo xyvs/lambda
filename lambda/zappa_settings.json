@@ -1,0 +1,12 @@
+{
+    "dev": {
+        "aws_region": "us-west-2",
+        "django_settings": "lambda.settings",
+        "project_name": "lambda",
+        "runtime": "python3.7",
+        "s3_bucket": "zappa-application-lambda",
+        "remote_env": "s3://zappa-secrets/lambda-secrets.json",
+        "certificate_arn": "arn:aws:acm:us-east-1:798268152748:certificate/ce106cdb-9dc8-4f40-a6b4-3d4a004b0451",
+        "domain": "dev.jofranmtz.com"
+    }
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>XYVS</title>
+    <style type="text/css">
+    html {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    }
+
+    body {
+        margin: 0;
+    }
+
+    a {
+        text-decoration: none;
+        color: #737373;
+    }
+
+    #container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        min-width: 100vw;
+    }
+
+    #title-container {
+        padding: 0 3rem;
+        max-width: 800px;
+    }
+
+    #title {
+        font-size: 3rem;
+        color: #1a202c;
+        margin-bottom: .5rem;
+        font-weight: 700;
+    }
+
+    #subtitle {
+        font-size: 1.25rem;
+        color: #1a202c;
+        line-height: 2rem;
+        text-align: justify;
+    }
+
+    #btn-container {
+        margin: 2rem auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    .btn {
+        background-color: #232323;
+        border-radius: .3rem;
+        color: #fff;
+        margin: 0 1rem;
+        padding: .5rem 1rem;
+        text-decoration: none;
+    }
+
+    .btn:hover {
+        background-color: #333;
+    }
+    </style>
+</head>
+
+<body id="container">
+    <section id="title-container">
+        <h1 id="title">Hi, this is a Django app!</h1>
+        <p id="subtitle">And what's so special about it? It's running on a
+            <a href="https://aws.amazon.com/lambda/">AWS Lambda</a> instance, auto deployed via
+            <a href="https://github.com/features/actions">GitHub Actions</a>, following some of
+            the best practices of the <a href="https://12factor.net/">twelve-factor methodology</a>,
+            and even though it's small, follows <a href="https://www.python.org/dev/peps/pep-0008/">PEP8</a>
+            best practices, the frontend it's build from 0 and the static files and database are 
+            hosted on <a href="https://aws.amazon.com/s3/">AWS S3</a>.</p>
+        <div id="btn-container">
+            <a class="btn" href="{% url 'admin:index' %}">Show me this is a Django App!</a>
+            <a class="btn" href="https://github.com/xyvs/lambda">Source Code</a>
+        </div>
+    </section>
+</body>
+
+</html>
